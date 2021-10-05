@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/dark-N00B/ReactToDoList/issues"
   },
+  "devDependencies": {
+    "react-scripts": "latest"
+  },
   "homepage": "https://dark-n00b.github.io/ReactToDoList"
 }
