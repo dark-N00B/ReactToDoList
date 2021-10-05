@@ -2,5 +2,26 @@ import React, {Component, useState} from "react";
 import "./style.css";
 
 export default function App() {
-    return()
+
+
+    
+    const [task, setTask] = useState('')
+    const [todoList, setTodoList] = useState([])
+
+    return (
+        <div>
+            <input type="text" value={task} onChange={(e) => {
+                setTask (e.target.value);
+            }}/>
+            <button onClick={() => {
+                if (task!='') {
+                    setTodoList([...todoList, task]);
+                    setTask('');
+                }
+            }
+                
+            }>Add Task</button>
+        </div>
+
+    )
 }
