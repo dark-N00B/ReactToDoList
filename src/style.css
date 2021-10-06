@@ -67,6 +67,10 @@ h1, p {
   color: white;
 }
 
+/*.task:nth-child(odd) {
+  background-color: darkslategray;
+}*/
+
 .task:hover {
   transition-duration: 1000ms;
   background-color: black;
