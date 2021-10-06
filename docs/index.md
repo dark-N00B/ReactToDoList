@@ -3,8 +3,11 @@
 
 ### Features:
 
- - Add Tasks
+
+
+  - Add Tasks
   - Delete Tasks
+  - Mark Task as Done
 
 
 

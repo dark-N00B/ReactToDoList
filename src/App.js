@@ -54,6 +54,12 @@ export default function App() {
                     })}
                 </div>
             </div>
+
+            <div class="clearAll">
+                <button class="clearBtn" onClick={()=>{
+                    setTodoList([])
+                }}>Clear All</button>
+            </div>
         </div>
 
     )

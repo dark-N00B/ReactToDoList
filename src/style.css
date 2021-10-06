@@ -83,3 +83,13 @@ h1, p {
 .taskDone::before {
   text-decoration: none;
 }
+
+.clearAll {
+  margin: auto;
+  padding: auto;
+  padding-top: 5px;
+}
+
+/*.clearBtn {
+
+}*/
