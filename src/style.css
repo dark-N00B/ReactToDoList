@@ -74,6 +74,7 @@ h1, p {
 
 .taskDone {
   text-decoration: line-through;
+  background-color: cadetblue;
 }
 .taskDone::before {
   text-decoration: none;
