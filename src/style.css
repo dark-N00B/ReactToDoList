@@ -1,3 +1,24 @@
 h1, p {
     font-family: Lato;
   }
+
+
+
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .addTask {
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.btnStyle {
+  margin-left: 10px;
+  background-color: blueviolet;
+  color:aliceblue
+}

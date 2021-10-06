@@ -9,11 +9,12 @@ export default function App() {
     const [todoList, setTodoList] = useState([])
 
     return (
-        <div>
+        <div class="main">
+            <div class="addTask">
             <input type="text" value={task} onChange={(e) => {
                 setTask (e.target.value);
             }}/>
-            <button onClick={() => {
+            <button class="btnStyle" onClick={() => {
                 if (task!='') {
                     setTodoList([...todoList, task]);
                     setTask('');
@@ -21,6 +22,7 @@ export default function App() {
             }
                 
             }>Add Task</button>
+            </div>
         </div>
 
     )
