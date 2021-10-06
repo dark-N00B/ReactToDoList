@@ -1,6 +1,6 @@
 h1, p {
     font-family: Lato;
-  }
+}
 
 
 
@@ -8,21 +8,28 @@ h1, p {
 .main {
     display: flex;
     flex-direction: column;
-  }
+}
 
 .addTask {
-
+  color: white;
   margin: 10px;
   padding: 10px;
   justify-content: center;
-  text-align: center;
+  text-align: right;
   background-color: black;
 }
 
 .btnStyle {
   margin-left: 10px;
   background-color: blueviolet;
-  color:aliceblue
+  color:aliceblue;
+  border-radius: 100px;
+}
+
+.btnStyle:hover {
+  background-color: aqua;
+  color: black;
+  transition-duration: 500ms;
 }
 
 .taskList {
@@ -30,10 +37,29 @@ h1, p {
   padding-top: 100px;
 }
 
+.listStyle {
+  /*list-style-type: none;*/
+}
+
 .delBtn {
   margin-left: 10px;
+  float: right;
+  border-radius: 7px;
+}
+
+.delBtn:hover {
+  background-color: red;
+  color: white;
+  transition-duration: 500ms;
 }
 
 .task {
-  margin: 10px;
+  padding: 10px;
+  background-color: darkgrey;
+  color: white;
+}
+
+.task:hover {
+  transition-duration: 1000ms;
+  background-color: black;
 }
