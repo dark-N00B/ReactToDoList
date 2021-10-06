@@ -45,9 +45,9 @@ h1, p {
   padding-top: 100px;
 }
 
-.listStyle {
-  /*list-style-type: none;*/
-}
+/*.listStyle {
+  list-style-type: none;
+}*/
 
 .delBtn {
   margin-left: 10px;
@@ -65,10 +65,16 @@ h1, p {
   padding: 10px;
   background-color: darkgrey;
   color: white;
-  
 }
 
 .task:hover {
   transition-duration: 1000ms;
   background-color: black;
+}
+
+.taskDone {
+  text-decoration: line-through;
+}
+.taskDone::before {
+  text-decoration: none;
 }

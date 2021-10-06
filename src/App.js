@@ -6,7 +6,7 @@ export default function App() {
 
     
     const [task, setTask] = useState('')
-    const [todoList, setTodoList] = useState(["Click 'Add Task' button to create a new task","Click the delete button on the right to delete completed tasks"])
+    const [todoList, setTodoList] = useState(["Click 'Add Task' button to create a new task","Click on the task to mark it as done","Click the delete button on the right to delete completed tasks"])
 
     function onDelete(i) {
         const newList = todoList.filter((task, index) => {
@@ -41,7 +41,10 @@ export default function App() {
                 <div class="listStyle">
                     {todoList.map((task, i) => {
                         return (
-                            <div onClick="" class="task" key={i}>
+                            <div onClick={(e) => {
+                                e.target.classList.toggle('taskDone');
+                                }
+                            } class="task" key={i}>
                                 
                                 {task}
                                 <button class="delBtn" onClick={() => {onDelete(i)}}>X</button>
