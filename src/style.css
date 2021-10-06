@@ -5,20 +5,26 @@ h1, p {
 
 
 
-  .main {
+.main {
     display: flex;
     flex-direction: column;
   }
 
-  .addTask {
+.addTask {
+
   margin: 10px;
   padding: 10px;
   justify-content: center;
   text-align: center;
+  background-color: black;
 }
 
 .btnStyle {
   margin-left: 10px;
   background-color: blueviolet;
   color:aliceblue
+}
+
+.taskList {
+  color: red;
 }

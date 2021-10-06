@@ -19,9 +19,25 @@ export default function App() {
                     setTodoList([...todoList, task]);
                     setTask('');
                 }
+                else {
+                    alert("Task cannot be empty!!!");
+                }
             }
                 
             }>Add Task</button>
+            </div>
+            <div class="taskList">
+                <ul>
+                    {todoList.map((task, i) => {
+                        return (
+                            <li key={i}>
+                                {task}
+                                <button>Delete</button>
+                            </li>
+                            
+                        );
+                    })}
+                </ul>
             </div>
         </div>
 
