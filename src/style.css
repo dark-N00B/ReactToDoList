@@ -27,4 +27,13 @@ h1, p {
 
 .taskList {
   color: red;
+  padding-top: 100px;
+}
+
+.delBtn {
+  margin-left: 10px;
+}
+
+.task {
+  margin: 10px;
 }

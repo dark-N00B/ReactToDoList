@@ -8,6 +8,14 @@ export default function App() {
     const [task, setTask] = useState('')
     const [todoList, setTodoList] = useState([])
 
+    function onDelete(i) {
+        const newList = todoList.filter(function (task, index) {
+            return index!==i;
+        });
+
+        setTodoList(newList);
+    }
+
     return (
         <div class="main">
             <div class="addTask">
@@ -30,9 +38,9 @@ export default function App() {
                 <ul>
                     {todoList.map((task, i) => {
                         return (
-                            <li key={i}>
+                            <li class="task" key={i}>
                                 {task}
-                                <button>Delete</button>
+                                <button class="delBtn" onClick={function () {onDelete(i)}}>Delete</button>
                             </li>
                             
                         );
