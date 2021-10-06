@@ -9,7 +9,7 @@ export default function App() {
     const [todoList, setTodoList] = useState([])
 
     function onDelete(i) {
-        const newList = todoList.filter(function (task, index) {
+        const newList = todoList.filter((task, index) => {
             return index!==i;
         });
 
@@ -40,7 +40,7 @@ export default function App() {
                         return (
                             <li class="task" key={i}>
                                 {task}
-                                <button class="delBtn" onClick={function () {onDelete(i)}}>Delete</button>
+                                <button class="delBtn" onClick={() => {onDelete(i)}}>Delete</button>
                             </li>
                             
                         );
