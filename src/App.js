@@ -18,27 +18,31 @@ export default function App() {
 
     return (
         <div class="main">
-            <div class="addTask">
-                <input type="text" value={task} onChange={(e) => {
-                    setTask (e.target.value);
-                }}/>
-                <button class="btnStyle" onClick={() => {
-                    if (task!='') {
-                        setTodoList([...todoList, task]);
-                        setTask('');
+            <div class="header">
+                <h2>To-Do List</h2>
+                <div class="addTask">
+                    <input type="text" value={task} onChange={(e) => {
+                        setTask (e.target.value);
+                    }}/>
+                    <button class="addBtn" onClick={() => {
+                        if (task!='') {
+                            setTodoList([...todoList, task]);
+                            setTask('');
+                        }
+                        else {
+                            alert("Task cannot be empty!!!");
+                        }
                     }
-                    else {
-                        alert("Task cannot be empty!!!");
-                    }
-                }
-                    
-                }>Add Task</button>
+                        
+                    }>Add Task</button>
+                </div>
             </div>
             <div class="taskList">
                 <div class="listStyle">
                     {todoList.map((task, i) => {
                         return (
-                            <div class="task" key={i}>
+                            <div onClick="" class="task" key={i}>
+                                
                                 {task}
                                 <button class="delBtn" onClick={() => {onDelete(i)}}>X</button>
                             </div>

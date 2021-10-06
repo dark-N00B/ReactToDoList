@@ -8,25 +8,33 @@ h1, p {
 .main {
     display: flex;
     flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
 }
 
 .addTask {
   color: white;
-  margin: 10px;
-  padding: 10px;
-  justify-content: center;
-  text-align: right;
-  background-color: black;
+  margin: auto;
+  margin-right: 2%;
+  padding: auto;
+  padding-right: 2%;
 }
 
-.btnStyle {
+.addBtn {
   margin-left: 10px;
   background-color: blueviolet;
   color:aliceblue;
   border-radius: 100px;
 }
 
-.btnStyle:hover {
+.addBtn:hover {
   background-color: aqua;
   color: black;
   transition-duration: 500ms;
@@ -57,6 +65,7 @@ h1, p {
   padding: 10px;
   background-color: darkgrey;
   color: white;
+  
 }
 
 .task:hover {
