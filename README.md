@@ -1,4 +1,3 @@
-# React ToDo List
+# [React ToDo List](https://dark-n00b.github.io/ReactToDoList/)
 
-
-## [Website](https://dark-n00b.github.io/ReactToDoList/)
+##
