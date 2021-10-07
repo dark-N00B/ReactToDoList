@@ -17,3 +17,9 @@
 npm install
 ```
 
+### To launch this app, use terminal to type in:
+
+```code
+npm start
+```
+
