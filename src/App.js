@@ -16,6 +16,16 @@ export default function App() {
         setTodoList(newList);
     }
 
+    function addTask () {
+        if (task!='') {
+            setTodoList([...todoList, task]);
+            setTask('');
+        }
+        else {
+            alert("Task cannot be empty!!!");
+        }
+    }
+
     return (
         <div class="main">
             <div class="header">
@@ -23,15 +33,13 @@ export default function App() {
                 <div class="addTask">
                     <input type="text" value={task} onChange={(e) => {
                         setTask (e.target.value);
+                    }} onKeyDown={(e) => {
+                        if (e.keyCode === 13) {
+                            addTask();
+                        }
                     }}/>
                     <button class="addBtn" onClick={() => {
-                        if (task!='') {
-                            setTodoList([...todoList, task]);
-                            setTask('');
-                        }
-                        else {
-                            alert("Task cannot be empty!!!");
-                        }
+                        addTask();
                     }
                         
                     }>Add Task</button>
@@ -47,7 +55,10 @@ export default function App() {
                             } class="task" key={i}>
                                 
                                 {task}
-                                <button class="delBtn" onClick={() => {onDelete(i)}}>X</button>
+                                <button class="delBtn" onClick={(e) => {
+                                    e.target.style.textDecoration = "none";
+                                    onDelete(i);
+                                    }}>X</button>
                             </div>
                             
                         );
@@ -55,11 +66,18 @@ export default function App() {
                 </div>
             </div>
 
-            <div class="clearAll">
-                <button class="clearBtn" onClick={()=>{
-                    setTodoList([])
-                }}>Clear All</button>
-            </div>
+            {() => {
+                if (todoList.length != 0) {
+                    return (
+                        <div class="clearAll">
+                            <button class="clearBtn" onClick={()=>{
+                                setTodoList([])
+                            }}>Clear All</button>
+                        </div>
+                    )
+                }
+                else return <div>0</div>
+            }}
         </div>
 
     )
