@@ -1,23 +1,28 @@
 # To-Do List
 ## React App
+![GitHub package.json version](https://img.shields.io/github/package-json/v/dark-N00B/ReactToDoList)
+![GitHub](https://img.shields.io/github/license/dark-N00B/ReactToDoList)
+![GitHub last commit](https://img.shields.io/github/last-commit/dark-N00B/ReactToDoList)
 
-### Features:
+## Dependencies
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/dark-N00B/ReactToDoList/react)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/dark-N00B/ReactToDoList/react-dom)
 
+### Features
+ - Add Task
+ - Mark Task as Done
+ - Delete Tasks
 
+## Deployement
+Coming Soon
 
-  - Add Tasks
-  - Delete Tasks
-  - Mark Task as Done
-
-
-
-### To install this app, use terminal to type in:
+### Install:
 
 ```code
 npm install
 ```
 
-### To launch this app, use terminal to type in:
+### Launch:
 
 ```code
 npm start
